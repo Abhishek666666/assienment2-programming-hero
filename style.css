@@ -276,7 +276,8 @@ hr.color {
 }
 
 .socile i:hover {
-    color: black;
+    color: rgb(247, 245, 245);
+    background-color: rgba(249, 246, 246, 0.787);
 }
 
 .link:hover {
