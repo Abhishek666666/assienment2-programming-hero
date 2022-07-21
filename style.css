@@ -1,0 +1,377 @@
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* commonstyle */
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    width: 90%;
+    margin: 30px auto;
+}
+
+/*...... top banner part start
+.......... */
+.header {
+    margin-bottom: 130px;
+}
+
+.top-banner {
+
+    border-radius: 18px;
+    background-color: rgba(22, 22, 22, 1);
+    display: grid;
+    grid-template-columns: repeat(2 1fr);
+
+}
+
+.head {
+    display: flex;
+    border-radius: 2px solid;
+    width: 100%;
+
+}
+
+/*.......... written part
+ on header section
+ ........ */
+
+.written-part {
+    width: 40%;
+    color: rgba(255, 255, 255, 1);
+    margin: auto;
+    font-size: 0.8em;
+
+
+
+}
+
+/* picture part */
+.pic {
+    width: 40%;
+    padding-right: 5%;
+    padding-top: 2%;
+}
+
+.pic img {
+    width: 100%;
+
+}
+
+button {
+    background-color: red;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 400px;
+    color: #fff;
+}
+
+.button p {
+    padding-bottom: 20PX;
+
+}
+
+button:hover {
+    background-color: #fff;
+    color: rgb(237, 177, 12);
+}
+
+.fa-circle-play:hover {
+    background-color: rgb(230, 14, 14);
+}
+
+.tmge {
+    display: flex;
+}
+
+.tmge img {
+    height: 8px;
+    color: #fff;
+}
+
+.tmg h6 {
+    font-weight: 100;
+}
+
+.tmge>h6,
+img {
+    display: flex;
+    padding-bottom: 20px;
+
+}
+
+/*...... top banner part end
+.......... */
+/* <!-- second part card and sidebar button part start --> */
+.container {
+
+    margin-top: 10%;
+    display: grid;
+    grid-gap: 1rem;
+    height: 100vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-row: repeat(3, 1fr);
+    grid-template-areas: "sidebar box1 box2 box3"
+        "sidebar box4 box5 box6"
+        "sidebar box7 box8 box9"
+        "footer footer footer footer "
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.box {
+    border: 1px solid rgb(225, 218, 218);
+    border-radius: 5px;
+
+}
+
+.box1 {
+    grid-area: box1;
+
+}
+
+.box2 {
+    grid-area: box2;
+}
+
+.box3 {
+    grid-area: box3;
+}
+
+.box4 {
+    grid-area: box4;
+}
+
+.box5 {
+    grid-area: box5;
+}
+
+.box6 {
+    grid-area: box6;
+}
+
+.box7 {
+    grid-area: box7;
+}
+
+.box8 {
+    grid-area: box8;
+}
+
+.box9 {
+    grid-area: box9;
+}
+
+.container img {
+    width: 100%;
+    height: 40%;
+}
+
+.info {
+    padding: 5px;
+}
+
+.btn {
+    width: 80px;
+    height: 22px;
+    color:
+        rgba(22, 22, 22, 1);
+    background-color: #fff;
+}
+
+.btn:hover {
+    color: white;
+    background-color: red;
+}
+
+.box:hover {
+    color: red;
+    background-color: rgb(15, 15, 15);
+    box-shadow: 20px 20px 30px rgb(230, 222, 222);
+}
+
+form a {
+    text-decoration: none;
+    color: rgba(22, 22, 22, 1);
+
+
+}
+
+form h6 {
+    text-align: center;
+    background-color: #fff;
+    border-radius: 6px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.hover:hover {
+    background-color: rgb(225, 8, 8);
+    color: #fff;
+
+}
+
+a:hover {
+    color: #fff;
+}
+
+/* .hover a:hover {
+    color: #fff
+} */
+
+
+form {
+    background-color:
+        rgba(22, 22, 22, 1);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+
+/* fotter element */
+.footer {
+    grid-area: footer;
+    height: 150px;
+    width: 100%;
+    background-color: rgb(8, 8, 8);
+    border-radius: 6px;
+}
+
+hr {
+    background-color: rgb(14, 14, 14);
+
+}
+
+footer h3 {
+    text-align: center;
+    color: #fff;
+}
+
+footer a {
+    text-decoration: none;
+    font-size: 0.4rem;
+    color: rgba(185, 185, 185, 1);
+    padding: 5px;
+
+}
+
+hr.color {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 80%;
+}
+
+.link {
+
+    text-align: center;
+}
+
+.link:hover {
+    color: red;
+}
+
+/* upcoming match element */
+.ig {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+}
+
+.ig img {
+    width: 40%;
+    height: 50%;
+}
+
+.news {
+    text-align: center;
+}
+
+/* media query for mobile screen */
+@media only screen and (max-width:480px) {
+    .container {
+        grid-template-columns: 0.80fr;
+        /* grid-template-rows: 1fr 1fr ; */
+        grid-template-areas:
+            "written-part"
+            "pic"
+            "sidebar"
+            "box1""box2""box3""box4"
+            "box5""box6""box7""box8""box9""footer";
+
+    }
+
+
+    .link>a {
+
+        display: block;
+        padding: 1px;
+
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif;
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .written-part {
+        height: 350px;
+        ;
+        /* width: 40%; */
+        color: rgba(255, 255, 255, 1);
+        margin: auto;
+        font-size: 0.5em;
+
+
+
+    }
+
+    .header {
+        margin-bottom: 30px;
+    }
+
+    .top-banner {
+
+        border-radius: 18px;
+        background-color: rgba(22, 22, 22, 1);
+        display: block;
+        /* grid-template-row: repeat(2 1fr); */
+
+    }
+
+    .head {
+        display: block;
+        border-radius: 2px solid;
+        width: 100%;
+
+    }
+
+    .pic {
+        height: 50%;
+        width: 50%;
+        padding-left: 50px;
+        padding-top: 2%;
+    }
+
+    .pic img {
+        height: 250px;
+
+    }
+
+    .header {
+        height: 200px;
+    }
+
+    .info {
+        padding-bottom: 10px;
+    }
+
+    footer {
+        padding-bottom: 30px;
+    }
+
+
+}
+
+/* tablet view media query */
