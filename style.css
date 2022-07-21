@@ -316,7 +316,7 @@ hr.color {
     }
 
     .written-part {
-        height: 350px;
+        height: 250px;
         ;
         /* width: 40%; */
         color: rgba(255, 255, 255, 1);
@@ -341,7 +341,8 @@ hr.color {
     }
 
     .head {
-        display: block;
+        display: flex;
+        flex-direction: column;
         border-radius: 2px solid;
         width: 100%;
 
@@ -521,5 +522,6 @@ hr.color {
     .box8 {
         grid-area: box8;
     }
+
 
 }
