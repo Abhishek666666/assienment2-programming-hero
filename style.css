@@ -233,7 +233,7 @@ form {
 /* fotter element */
 .footer {
     grid-area: footer;
-    height: 150px;
+    height: 200px;
     width: 100%;
     background-color: rgb(8, 8, 8);
     border-radius: 6px;
@@ -265,6 +265,18 @@ hr.color {
 .link {
 
     text-align: center;
+}
+
+.socile i {
+    background-color: rgb(238, 230, 230);
+    padding: 10px;
+    margin-bottom: 20px;
+    color: black;
+
+}
+
+.socile i:hover {
+    color: black;
 }
 
 .link:hover {
@@ -371,6 +383,8 @@ hr.color {
     footer {
         padding-bottom: 30px;
     }
+
+
 
 
 }
